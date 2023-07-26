@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Moon+Dance&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <link rel="stylesheet" href="/styles/output.css" />
+    <script defer src="./index.js"></script>
+  </head>
+  <body class="bg-DarkSlateGrey h-screen font-roboto">
+    <div
+      class="wrapper container md:justify-between md:pt-4 md:pb-4 md:pl-4 md:pr-4 bg-White ml-auto mr-auto md:flex md:flex-row border md:rounded-3xl md:mt-auto md:mb-auto md:h-screen mt-auto mb-auto xl:leading-8"
+    >
+      <div
+        class="illustration w-auto rounded-b-3xl h-52 bg-mobile bg-cover md:bg-desktop md:order-2 md:w-2/5 md:h-full"
+      ></div>
+      <div
+        class="info mt-10 ml-3 mb-5 md:pl-7 md:pt-10 md:pb-10 text-DarkSlateGrey md:order-1 md:w-2/4 pl-4 pr-4 md:mt-auto md:mb-auto xl:w-2/5 xl:ml-9"
+      >
+        <h1 class="text-4xl xl:text-6xl font-bold">Stay updated!</h1>
+        <p class="mt-6 mb-4 font-semibold xl:text-xl xl:font-medium">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul
+          class="text-base ml-7 mt-6 font-semibold xl:font-medium xl:text-xl list-image-checkmark list-outside w-4/5 xl:ml-12"
+        >
+          <li class="mt-0">Product discovery and building what matters</li>
+          <li class="mt-2">Measuring to ensure updates are a success</li>
+          <li class="mt-2">And much more!</li>
+        </ul>
+        <div
+          class="font-semibold mt-10 text-base pb-2 xl:text-xl xl:mt-10 flex justify-between"
+        >
+          <h1>Email address</h1>
+          <h1 class="errMessage hidden">Valid email required</h1>
+        </div>
+        <input
+          type="email"
+          id="emailIn"
+          placeholder="email@company.com"
+          class="border outline-none rounded-md w-full border-Grey p-4 mb-7 focus:border-DarkSlateGrey xl:text-2xl xl:rounded-2xl hover:border-DarkSlateGrey"
+        />
+        <button
+          class="buttonDown border p-4 w-full mb-6 font-semibold rounded-md text-White bg-DarkSlateGrey xl:text-2xl xl:rounded-2xl hover:bg-gradient-to-r from-DarkSlateGrey to-Tomato"
+        >
+          Subscribe to monthly newsletter
+        </button>
+        <div
+          class="attribution text-center font-normal text-xs xl:text-xl xl:ml-auto xl:mr-auto xl:font-medium"
+        >
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a class="text-Grey" href="#">Oladotun Joseph</a>.
+        </div>
+      </div>
+    </div>
+
+    <!-- Thanks for subscribing! A confirmation email has been sent to
+    ash@loremcompany.com. Please open it and click the button inside to confirm
+    your subscription. Dismiss message -->
+  </body>
+</html>
