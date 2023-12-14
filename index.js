@@ -37,7 +37,6 @@ const errMess = function () {
     btnSucc.textContent = "Dismiss message";
     imgSucc.src = "/assets/images/icon-success.svg";
     textSucc2.textContent = "Thanks for subscribing!";
-
     const html = `A confirmation email has been sent to
    <a href="mailto:${emailIn.value}"><b>${emailIn.value}</b></a>. Please open it and click the button inside to confirm
    your subscription.`;
@@ -103,18 +102,3 @@ const errMess = function () {
 };
 
 button.addEventListener("click", errMess);
-
-// const isValidEmail = function (email) {
-//   const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-//   return emailPattern.test(email);
-// };
-
-// // Function to check validity and apply error message styling
-// const errMess = function () {
-//   const emailValue = .trim(); // Trim whitespace from the input value
-//   if (!isValidEmail(emailValue)) {
-//     emailIn.classList.add("border-red-600");
-//   } else {
-//     emailIn.classList.remove("border-red-600");
-//   }
-// };
